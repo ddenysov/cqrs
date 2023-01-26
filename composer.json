@@ -1,0 +1,23 @@
+{
+    "name": "ddenysov/cqrs",
+    "autoload": {
+        "psr-4": {
+            "Ddenysov\\CQRS\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Test\\": "test/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Dmytro Denysov",
+            "email": "dmytro.denysov@danads.se"
+        }
+    ],
+    "require-dev": {
+        "symfony/test-pack": "^1.0",
+        "phpunit/phpunit": "^9.5"
+    }
+}
