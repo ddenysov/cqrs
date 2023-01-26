@@ -12,8 +12,12 @@ class FindUserQueryHandler implements QueryHandler
      * @param Query $query
      * @return QueryResult
      */
-    public function handle(Query $query): QueryResult
+    public function handle(Query $query): UserCollectionQueryResult
     {
-        return new QueryResult([]);
+        return new UserCollectionQueryResult([
+            [
+                'email' => 'gendalf@gmail.com',
+            ]
+        ]);
     }
 }

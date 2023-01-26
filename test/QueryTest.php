@@ -15,8 +15,11 @@ class QueryTest extends TestCase
     {
         MessageHandlerRegistry::register(FindUserQuery::class, FindUserQueryHandler::class);
         $queryBus = new MemoryQueryBus();
-        $result = $queryBus->execute(new FindUserQuery());
+        $result   = $queryBus->execute(new FindUserQuery());
 
         $this->assertInstanceOf(QueryResult::class, $result);
+        $data = $result->toArray();
+        $this->assertEquals('gendalf@gmail.com', $data[0]['user_email']);
+        $this->assertFalse(isset($data[0]['email']));
     }
 }
