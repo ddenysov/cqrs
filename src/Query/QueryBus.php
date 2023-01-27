@@ -8,5 +8,5 @@ interface QueryBus
      * @param Query $query
      * @return QueryResult
      */
-    public function execute(Query $query): QueryResult;
+    public function send(Query $query): QueryResult;
 }
