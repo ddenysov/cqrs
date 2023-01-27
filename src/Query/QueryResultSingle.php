@@ -4,7 +4,9 @@ namespace Ddenysov\CQRS\Query;
 
 class QueryResultSingle extends AbstractQueryResult
 {
-    protected array $result;
+    final public function __construct(private readonly array $result)
+    {
+    }
 
     /**
      * @return array

@@ -4,7 +4,7 @@ namespace Ddenysov\CQRS\Query;
 
 class QueryResultCollection extends AbstractQueryResult
 {
-    public function __construct(private iterable $source)
+    final public function __construct(private readonly iterable $source)
     {
     }
 

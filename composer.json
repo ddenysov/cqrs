@@ -19,5 +19,8 @@
     "require-dev": {
         "symfony/test-pack": "^1.0",
         "phpunit/phpunit": "^9.5"
+    },
+    "require": {
+        "symfony/messenger": "^6.2"
     }
 }
